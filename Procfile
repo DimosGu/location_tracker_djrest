@@ -1,0 +1,1 @@
+web: gunicorn -b 0.0.0.0:5001 location_tracker_djrest.wsgi --log-file -
