@@ -34,6 +34,11 @@ Event based location tracker Rest API which was developed with Django Tastypie (
     10- django-geposition
     * pip install -r requirements.txt
 
+# collect static
+    python manage.py collectstatic
+
+# .gitignore file
+
 # models,syncdb and migrations
     1- add models
     2- remove migrations and run python manage.py syncdb (or try 3)
