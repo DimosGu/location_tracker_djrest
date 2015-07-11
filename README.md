@@ -54,3 +54,11 @@ Event based location tracker Rest API which was developed with Django Tastypie (
     2- post:
         2.1- add header: Content-Type application/json
         2.2- post data:{"location": "35.456,58.678","msisdn": "+41524204242","plate": "34eb955"}
+
+# heroku deployment
+    1- heroku login
+    2- heroku create
+    3- git push heroku master
+    4- heroku run python manage.py syncdb
+    5- heroku ps:scale web=1
+    6- heroku open
