@@ -62,3 +62,15 @@ Event based location tracker Rest API which was developed with Django Rest Frame
     4- heroku run python manage.py syncdb
     5- heroku ps:scale web=1
     6- heroku open
+
+# Elastic Search installation and configuration (Haystack)
+    1- ES required java 1.7+
+    2- brew install Caskroom/cask/java
+    3- install: brew install elasticsearch
+    4- start: elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/1.4.2/config/elasticsearch.yml
+    5- pip install django-haystack and add to requirements.txt
+    6- add HAYSTACK_CONNECTIONS to to settings.py
+    7- add search_indexes.py and add SearchIndex classes
+    8- pip install elasticsearch and add to requirements.txt
+    9- python manage.py rebuild_index
+    10- override retrieve url of model view set adding search ability
