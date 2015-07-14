@@ -74,3 +74,6 @@ Event based location tracker Rest API which was developed with Django Rest Frame
     8- pip install elasticsearch and add to requirements.txt
     9- python manage.py rebuild_index
     10- override retrieve url of model view set adding search ability
+
+# Search integration on Heroku (Elastic Search)
+    1- https://devcenter.heroku.com/articles/searchbox#using-haystack-with-django
