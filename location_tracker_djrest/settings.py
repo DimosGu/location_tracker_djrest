@@ -140,3 +140,5 @@ HAYSTACK_CONNECTIONS = {
         'INDEX_NAME': 'haystack_djrest',
     },
 }
+
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
