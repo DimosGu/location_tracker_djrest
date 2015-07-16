@@ -77,3 +77,7 @@ Event based location tracker Rest API which was developed with Django Rest Frame
 
 # Search integration on Heroku (Elastic Search)
     1- https://devcenter.heroku.com/articles/searchbox#using-haystack-with-django
+
+# Elastic search REST usage
+    1- get all documents: http://localhost:9200/haystack_djrest/_search?q=*&pretty
+    2- delete index: DELETE http://localhost:9200/haystack_djrest/

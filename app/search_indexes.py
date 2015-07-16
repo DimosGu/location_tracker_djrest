@@ -15,7 +15,7 @@ class EventIndex(indexes.SearchIndex, indexes.Indexable):
     @staticmethod
     def prepare_q(obj):
         return " ".join((
-            obj.plate, obj.msisdn, '[%s,%s]' % (obj.location.latitude, obj.location.longitude)
+            obj.plate, obj.msisdn
         ))
 
     def get_model(self):
